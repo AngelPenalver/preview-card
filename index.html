@@ -98,11 +98,11 @@
         font-size: var(--spacing-200, 24px);
         font-style: normal;
         font-weight: 800;
-        line-height: 150%; 
-        transition: .1s;
+        line-height: 150%;
+        transition: 0.1s;
       }
-      .card-content h2:hover{
-        color: var(--color-yellow, #F4D04E);
+      .card-content h2:hover {
+        color: var(--color-yellow, #f4d04e);
         transition: 0.1s;
       }
       .card-content p {
@@ -142,6 +142,44 @@
         font-weight: 800;
         line-height: 21px;
       }
+      @media (max-width: 568px) {
+        .card {
+          display: flex;
+          width: 327px;
+          flex-direction: column;
+          padding: 16px;
+          justify-content: center;
+        }
+        .card img {
+          width: 200px;
+        }
+        .card-content h2 {
+          font-size: 16px;
+        }
+        .card-content h4 {
+          font-size: 12px;
+        }
+        .card-content h3 {
+          font-size: 11px;
+        }
+        .card p {
+          font-size: 13px;
+        }
+        .autor img {
+          width: 32px;
+        }
+        .card {
+          width: 230px;
+          height: fit-content;
+        }
+        .card-content {
+          width: 200px;
+        }
+        .footer {
+          font-size: 10px;
+          width: fit-content;
+        }
+      }
     </style>
   </head>
   <body>
@@ -178,7 +216,10 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/AngelPenalver" target="_blank" rel="noopener">Ángel Peñalver</a>.
+      >. Coded by
+      <a href="https://github.com/AngelPenalver" target="_blank" rel="noopener"
+        >Ángel Peñalver</a
+      >.
     </div>
   </body>
 </html>
