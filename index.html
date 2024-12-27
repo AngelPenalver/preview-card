@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=figtree:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: #f4d04e;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "figtree";
+      }
+      .footer {
+        position: absolute;
+        bottom: 5px;
+        font-size: 13px;
+        text-align: center;
+      }
+      .footer a {
+        color: hsl(228, 45%, 44%);
+      }
+      .card {
+        height: 522px;
+        display: flex;
+        padding: var(--spacing-200, 24px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-200, 24px);
+        flex-shrink: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border: 1px #000 solid;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 8px 8px 0px;
+      }
+      .card img {
+        border-radius: 10px;
+        align-self: stretch;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-150, 12px);
+        align-self: stretch;
+        width: 336px;
+        height: 194px;
+        box-sizing: border-box;
+      }
+      .card h3 {
+        display: flex;
+        padding: var(--spacing-50, 4px) var(--spacing-150, 12px);
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-100, 8px);
+        border-radius: 4px;
+        background: #f4d04e;
+        font-weight: 800;
+        font-size: 14px;
+      }
+      .card-content h4 {
+        color: var(--color-gray-950, #111);
+        font-family: Figtree;
+        font-size: var(--font-size-text-preset-3, 14px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+      }
+      .card-content h2 {
+        font-family: Figtree;
+        font-size: var(--spacing-200, 24px);
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%; 
+        transition: .1s;
+      }
+      .card-content h2:hover{
+        color: var(--color-yellow, #F4D04E);
+        transition: 0.1s;
+      }
+      .card-content p {
+        color: var(--color-gray-500, #6b6b6b);
+        font-family: Figtree;
+        font-size: var(--font-size-text-preset-2, 16px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        align-self: stretch;
+      }
+      .card-content h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+      .autor {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-150, 12px);
+      }
+      .autor img {
+        border-radius: 32px;
+        background: url("./assets/images/image-avatar.webp") lightgray 50% /
+          cover no-repeat;
+      }
+      .autor h5 {
+        color: var(--color-gray-950, #111);
+        font-family: Figtree;
+        font-size: var(--font-size-text-preset-3, 14px);
+        font-style: normal;
+        font-weight: 800;
+        line-height: 21px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="article"
+        width="336"
+      />
+      <div class="card-content">
+        <h3>Learning</h3>
+
+        <h4>Published 21 Dec 2023</h4>
+
+        <h2>HTML & CSS foundations</h2>
+
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="autor">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="autor"
+          width="32"
+          height="32"
+        />
+        <h5>Greg Hooper</h5>
+      </div>
+    </div>
+
+    <div class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/AngelPenalver" target="_blank" rel="noopener">Ángel Peñalver</a>.
+    </div>
+  </body>
+</html>
